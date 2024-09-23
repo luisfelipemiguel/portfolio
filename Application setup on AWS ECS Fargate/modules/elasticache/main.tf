@@ -8,17 +8,12 @@ resource "aws_elasticache_cluster" "this" {
   subnet_group_name    = aws_elasticache_subnet_group.this.name
   security_group_ids   = var.security_group_ids
 
-  tags = {
-    Name        = "${var.ec_environment}-elasticache-cluster"
-    ec_environment = var.ec_environment
-  }
+  tags = var.ec_tags_cluster
 }
 
 resource "aws_elasticache_subnet_group" "this" {
   name       = var.subnet_group_name
   subnet_ids = var.subnet_ids
 
-  tags = {
-    Name = "${var.ec_environment}-elasticache-subnet-group"
-  }
+  tags = var.ec_tags_subnet_group
 }

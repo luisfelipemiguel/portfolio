@@ -75,16 +75,3 @@ resource "aws_lb_listener" "https" {
     target_group_arn = aws_lb_target_group.this.arn
   }
 }
-
-resource "aws_route53_record" "this" {
-  zone_id = var.hosted_zone_id
-  name    = var.zone_name
-  type    = "A"
-
-  alias {
-    name                   = aws_lb.this.dns_name
-    zone_id                = aws_lb.this.zone_id
-    evaluate_target_health = true
-  }
-}
-

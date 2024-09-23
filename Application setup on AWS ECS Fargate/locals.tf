@@ -2,7 +2,7 @@ locals {
   environment = [
     {
       name  = "DATABASE_URL"
-      value = module.rds.database_url
+      value = "postgresql://${module.rds.db_username}:${module.rds.db_password}@${module.rds.db_instance_endpoint}/${module.rds.db_name}"
     },
     {
       name  = "FORCE_HTTPS"
@@ -10,7 +10,7 @@ locals {
     },
     {
       name  = "REDIS_URL"
-      value = module.elasticache.elasticache_url
+      value = "redis://${module.elasticache.elasticache_endpoint}:${module.elasticache.elasticache_port}"
     },
     {
       name  = "SECRET_KEY"
@@ -45,4 +45,13 @@ locals {
       value = var.utils_secret
     }
   ]
+
+  ec_tags_cluster = {
+    Name            = "${var.ec_environment}-elasticache-cluster"
+    ec_environment  = var.ec_environment
+  }
+
+  ec_tags_subnet_group = {
+    Name = "${var.ec_environment}-elasticache-subnet-group"
+  }
 }

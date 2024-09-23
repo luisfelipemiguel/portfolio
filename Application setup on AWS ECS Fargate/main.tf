@@ -99,6 +99,8 @@ module "ecs" {
   log_group_name         = var.log_group_name
   service_name           = var.service_name
   container_name         = var.container_name
+  network_mode           = var.network_mode
+  launch_type            = var.launch_type 
   docker_image           = var.docker_image
   subnets                = var.subnets
   security_groups        = var.security_groups

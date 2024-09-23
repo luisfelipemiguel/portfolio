@@ -17,3 +17,13 @@ output "ecs_task_execution_role_arn" {
   description = "The ARN of the ECS task execution role"
   value       = aws_iam_role.this.arn
 }
+
+output "launch_type" {
+  description = "The launch type configured for the ECS service."
+  value       = var.launch_type
+}
+
+output "network_mode" {
+  description = "The network mode configured for the ECS task."
+  value       = var.network_mode
+}

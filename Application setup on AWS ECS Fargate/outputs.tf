@@ -18,6 +18,16 @@ output "ecs_task_execution_role_arn" {
   value       = module.ecs.ecs_task_execution_role_arn
 }
 
+output "ec_tags_cluster" {
+  description = "Tags assigned to the ElastiCache cluster."
+  value       = local.ec_tags_cluster
+}
+
+output "ec_tags_subnet_group" {
+  description = "Tags assigned to the ElastiCache subnet group."
+  value       = local.ec_tags_subnet_group
+}
+
 output "elasticache_endpoint" {
   value = module.elasticache.elasticache_endpoint
 }
@@ -43,6 +53,9 @@ output "rds_db_username" {
 
 output "rds_endpoint" {
   description = "The endpoint of the RDS instance"
-  value       = module.rds.aws_db_instance
+  value       = module.rds.db_instance_endpoint
   sensitive   = true
 }
+
+
+

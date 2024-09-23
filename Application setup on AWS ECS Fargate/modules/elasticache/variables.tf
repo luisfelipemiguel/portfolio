@@ -3,6 +3,18 @@ variable "ec_environment" {
   type        = string
 }
 
+variable "ec_tags_cluster" {
+  description = "A map of tags to assign to the resource."
+  type        = map(string)
+  default     = {}  # Default to an empty map
+}
+
+variable "ec_tags_subnet_group" {
+  description = "A map of tags to assign to the Elasticache subnet group."
+  type        = map(string)
+  default     = {}  # Default to an empty map
+}
+
 variable "elasticache_cluster_id" {
   description = "ID for the ElastiCache cluster."
   type        = string
@@ -47,3 +59,5 @@ variable "subnet_ids" {
   description = "List of subnet IDs for the ElastiCache subnet group."
   type        = list(string)
 }
+
+

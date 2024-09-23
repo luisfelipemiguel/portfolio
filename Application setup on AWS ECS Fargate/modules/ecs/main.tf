@@ -31,7 +31,7 @@ resource "aws_ecs_cluster" "this" {
 resource "aws_ecs_task_definition" "this" {
   family                   = var.task_definition_family
   requires_compatibilities = var.task_definition_compatibilities
-  network_mode             = "awsvpc"
+  network_mode             = var.network_mode
   cpu                      = var.ecs_task_cpu
   memory                   = var.ecs_task_memory
   ephemeral_storage {
@@ -69,7 +69,7 @@ resource "aws_ecs_service" "this" {
   cluster         = aws_ecs_cluster.this.id
   task_definition = aws_ecs_task_definition.this.arn
   desired_count   = var.desired_count
-  launch_type     = "FARGATE"
+  launch_type     = var.launch_type
 
   network_configuration {
     subnets          = var.subnets

@@ -326,6 +326,11 @@ variable "iam_role_name" {
   type        = string
 }
 
+variable "launch_type" {
+  description = "The launch type for the ECS service."
+  type        = string
+}
+
 variable "log_group_name" {
   description = "CloudWatch log group name."
   type        = string
@@ -338,6 +343,11 @@ variable "log_group_retention" {
 
 variable "log_stream_prefix" {
   description = "Prefix for log stream"
+  type        = string
+}
+
+variable "network_mode" {
+  description = "The network mode to use for the ECS task."
   type        = string
 }
 
