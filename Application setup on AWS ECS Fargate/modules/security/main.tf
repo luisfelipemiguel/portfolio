@@ -47,3 +47,13 @@ resource "aws_security_group_rule" "allow_rds_fargate" {
   source_security_group_id = var.security_groups[0]
   description       = "Allow Fargate container to connect to PostgreSQL"
 }
+
+resource "aws_security_group_rule" "allow_all_outbound" {
+  security_group_id = var.security_groups[0]
+  type              = "egress"
+  protocol          = "-1"      # Use "-1" to allow all protocols
+  from_port         = 0          
+  to_port           = 65535
+  cidr_blocks       = ["0.0.0.0/0"]
+  description       = "Allow all outbound traffic"
+}
