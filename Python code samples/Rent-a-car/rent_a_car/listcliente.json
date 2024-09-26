@@ -1,0 +1,191 @@
+[
+    {
+        "ativo": 1,
+        "id": 1,
+        "nome": "Ana",
+        "nif": 123456789,
+        "dataNascimento": "1990-05-15",
+        "telefone": 912345678,
+        "email": "ana@gmail.com"
+    },
+    {
+        "ativo": 1,
+        "id": 2,
+        "nome": "João",
+        "nif": 987654321,
+        "dataNascimento": "1985-10-20",
+        "telefone": 933333333,
+        "email": "joao@hotmail.com"
+    },
+    {
+        "ativo": 1,
+        "id": 3,
+        "nome": "Maria",
+        "nif": 246813579,
+        "dataNascimento": "2000-03-25",
+        "telefone": 966666666,
+        "email": "maria@yahoo.com"
+    },
+    {
+        "ativo": 1,
+        "id": 4,
+        "nome": "Pedro",
+        "nif": 135792468,
+        "dataNascimento": "1978-08-10",
+        "telefone": 925555555,
+        "email": "pedro@outlook.com"
+    },
+    {
+        "ativo": 1,
+        "id": 5,
+        "nome": "Sophia",
+        "nif": 369258145,
+        "dataNascimento": "1995-12-05",
+        "telefone": 919999999,
+        "email": "sofia@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 6,
+        "nome": "Miguel",
+        "nif": 582461937,
+        "dataNascimento": "1982-07-30",
+        "telefone": 911111111,
+        "email": "miguel@gmail.com"
+    },
+    {
+        "ativo": 1,
+        "id": 7,
+        "nome": "Inês",
+        "nif": 748596321,
+        "dataNascimento": "1998-04-18",
+        "telefone": 927777777,
+        "email": "ines@hotmail.com"
+    },
+    {
+        "ativo": 1,
+        "id": 8,
+        "nome": "Rui",
+        "nif": 159487326,
+        "dataNascimento": "1993-01-12",
+        "telefone": 935555555,
+        "email": "rui@yahoo.com"
+    },
+    {
+        "ativo": 1,
+        "id": 9,
+        "nome": "Carla",
+        "nif": 824615937,
+        "dataNascimento": "1987-06-22",
+        "telefone": 933333333,
+        "email": "carla@outlook.com"
+    },
+    {
+        "ativo": 1,
+        "id": 10,
+        "nome": "Hugo",
+        "nif": 637951482,
+        "dataNascimento": "2001-09-01",
+        "telefone": 912222222,
+        "email": "hugo@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 11,
+        "nome": "Luis",
+        "nif": 296269069,
+        "dataNascimento": "1986-03-20",
+        "telefone": 912225222,
+        "email": "luisfelipe@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 12,
+        "nome": "Josefina",
+        "nif": 296268287,
+        "dataNascimento": "1985-03-21",
+        "telefone": 957896224,
+        "email": "josefina@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 13,
+        "nome": "Maria",
+        "nif": 296654712,
+        "dataNascimento": "2000-05-02",
+        "telefone": 936754112,
+        "email": "mariadb@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 14,
+        "nome": "Manuela",
+        "nif": 296269068,
+        "dataNascimento": "1989-06-15",
+        "telefone": 936755112,
+        "email": "manuela@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 15,
+        "nome": "Karen",
+        "nif": 296269067,
+        "dataNascimento": "1989-17-01",
+        "telefone": 936745889,
+        "email": "karen@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 16,
+        "nome": "Manuela",
+        "nif": 307096327,
+        "dataNascimento": "1992-06-13",
+        "telefone": 912564152,
+        "email": "manu@live.com"
+    },
+    {
+        "ativo": 1,
+        "id": 17,
+        "nome": "Julia",
+        "nif": 999111222,
+        "dataNascimento": "2003-12-3",
+        "telefone": 999444555,
+        "email": "juju@gmail.com"
+    },
+    {
+        "ativo": 0,
+        "id": 18,
+        "nome": "Iago",
+        "nif": 999111222,
+        "dataNascimento": "1992-03-03",
+        "telefone": 999444555,
+        "email": "juju@gmail.com"
+    },
+    {
+        "ativo": 0,
+        "id": 19,
+        "nome": "Paula",
+        "nif": 999111223,
+        "dataNascimento": "1992-03-12",
+        "telefone": 999111222,
+        "email": "juju@gmail.pt"
+    },
+    {
+        "ativo": 0,
+        "id": 20,
+        "nome": "Manuela",
+        "nif": 307096322,
+        "dataNascimento": "1992-06-13",
+        "telefone": 912564155,
+        "email": "manuela@gmail.com"
+    },
+    {
+        "ativo": 1,
+        "id": 21,
+        "nome": "Eurico",
+        "nif": 222222222,
+        "dataNascimento": "1992-06-13",
+        "telefone": 111111111,
+        "email": "manu@genial.com"
+    }
+]
