@@ -1,4 +1,4 @@
-# Hi there! 👋 Transitioning into Cybersecurity
+# Hi there! 👋 I am transitioning into Cybersecurity
 
 ---
 
